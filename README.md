@@ -109,7 +109,7 @@ The re-implementation is conducted in Nvidia T4 GPU provided by Google Colab. Th
 
 Due to the version conflict, I didn't follow author's set up (especially version of pytorch-lightning, which conflict with pip and CUDA).
 
-If you want to run my code, please fullfill the version requirement and enter the following instruction:
+If you want to run my code, please fullfill the version requirement and enter the following instruction in terminal:
 
 ```python
 python
