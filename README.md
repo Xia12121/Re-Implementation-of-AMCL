@@ -89,7 +89,6 @@ The loss function is following:
 
 $$
 Loss=\sum_i{(1-C_{ii})}^2+𝜆\sum_i\sum_{𝑗≠𝑖}C_{ij}^2
-
 $$
 
 ## III. Methodology of this paper
