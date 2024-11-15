@@ -28,6 +28,7 @@ The pipline chart is following:
 
 
 ## II. Baseline Models and their principles
+Author declaim AMCL method can be applied to four mainstream SSL method: SimCLR, MoCo, SimSiam, and B.Twins. This section will illustrate them all respectively.
 
 ## III. Methodology of this paper
 
