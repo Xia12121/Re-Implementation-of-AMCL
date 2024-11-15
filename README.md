@@ -107,5 +107,10 @@ The re-implementation is conducted in Nvidia T4 GPU provided by Google Colab. Th
 | Pytorch-lightning| 1.6.0           | 1.3.8              |
 | Lightly      | 1.0.8           | 1.0.8              |
 
+Due to the version conflict, I didn't follow author's set up (especially version of pytorch-lightning, which conflict with pip and CUDA).
 
+If you want to run my code, please fullfill the version requirement and enter the following instruction:
+
+'''python
+python train_eval.py
 
