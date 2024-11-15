@@ -91,7 +91,19 @@ $$
 Loss=\sum_i{(1-C_{ii})}^2+𝜆\sum_i\sum_{𝑗≠𝑖}C_{ij}^2
 $$
 
+Where $$C_{ii}$$ is the value on the diagonal of the fusion matrix.
+
 ## III. Methodology of this paper
 
 ## IV. Re-Implementation of Experiments
+
+The re-implementation is conducted in Nvidia T4 GPU provided by Google Colab. The set up enviroment is following:
+
+| Torch Version   | Torchvision Version |
+|-----------------|---------------------|
+| 2.3.1+cu121     | 1.4.0               |
+| 0.18.1+cu121    | 0.5.0               |
+| 1.6.0           | 1.3.8               |
+| 1.0.8           | 1.0.8               |
+
 
