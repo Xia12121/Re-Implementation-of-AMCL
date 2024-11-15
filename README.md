@@ -1,4 +1,4 @@
-# Re-Implementation of Adaptive Multi-head Contrastive Learning
+![1731690440924](https://github.com/user-attachments/assets/6ac56bea-d458-47b8-8c94-adaba22509f2)# Re-Implementation of Adaptive Multi-head Contrastive Learning
 This project contains my comprehension of this paper and the re-implementation of the experimental code. My code is various from original work because the lib version is different from the source code. This project is based on [Wang's work](https://github.com/LeiWangR/cl).
 ## Content of this page
 [I. Research Background and Motivation](#research-background-and-motivation)
@@ -28,7 +28,7 @@ The pipline chart is following:
 
 
 ## II. Baseline Models and their principles
-Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations-(SimCLR)), MoCo, SimSiam, and B.Twins. This section will illustrate them all respectively.
+Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations-(SimCLR)), [MoCo](#Momentum-Contrast-for-Unsupervised-Visual-Representation-Learning-(MoCo)), SimSiam, and B.Twins. This section will illustrate them all respectively.
 
 ### 2.1 A Simple Framework for Contrastive Learning of Visual Representations (SimCLR) 
 
@@ -47,6 +47,11 @@ The model is optimized through the following equation:
 $$
 Loss = -\log \frac{exp(similarity(q,k^+))}{\sum_{i=0}^K{exp(similarity(q,k_i^-))}}
 $$
+
+Just like the following chart, the loss will propagate to both encoders!
+
+### 2.2 Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)
+
 
 ## III. Methodology of this paper
 
