@@ -77,7 +77,7 @@ $$
 Loss=-cosine(x^q,x^{k+})
 $$
 
-Moreover, SimSiam proposed a novel mechanism named "gradient stop", which prevent gradient from flowing through the projection head.
+Moreover, SimSiam proposed a novel mechanism named "gradient stop", which prevent gradient from flowing through the encoder.
 
 ## III. Methodology of this paper
 
