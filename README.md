@@ -40,7 +40,7 @@ Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR
 To extract features from two views, two independent encoders (encoder $$q$$ and encoder $$k$$) are utilized. $$q$$ and $$k$$ are features of query and target respectively. The similarity between $$q$$ and $$k$$ is calculated through the following equation:
 
 $$
-Similarity = \frac {q\cdot k}{|q|\cdot |k|}
+Similarity = \frac {q\cdot k}{\left|q\right|\cdot \left|k\right|}
 $$
 
 
