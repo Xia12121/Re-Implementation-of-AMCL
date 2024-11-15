@@ -43,6 +43,11 @@ $$
 Similarity = \frac {q\cdot k}{\left|q\right|\cdot \left|k\right|}
 $$
 
+The model is optimized through the following equation:
+
+$$
+Loss = -\log \frac{exp(similarity(q,k^+))}{\sum_i=0^K{exp(similarity(q,k_i^-))}}
+$$
 
 ## III. Methodology of this paper
 
