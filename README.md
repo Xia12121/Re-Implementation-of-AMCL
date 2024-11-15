@@ -33,6 +33,7 @@ Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR
 ### 2.1 A Simple Framework for Contrastive Learning of Visual Representations (SimCLR) 
 
 ![image](https://github.com/user-attachments/assets/3b58d5f5-922a-463d-bf0e-efb093bf8fcd)
+
 SimCLR is a kind of unsupervised learning method based on contrast learning, which is a classical model framework in contrast learning. The main idea is to learn useful feature representations by maximizing the similarity between different data-enhanced versions of the same image.
 
 To extract features from two views, two independent encoders (encoder $$q$$ and encoder $$k$$) are utilized. $$q$$ and $$k$$ are features of query and target respectively. The similarity between $$q$$ and $$k$$ is calculated through the following equation:
