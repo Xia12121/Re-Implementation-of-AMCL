@@ -52,6 +52,11 @@ Just like the following chart, the loss will propagate to both encoders!
 
 ### 2.2 Momentum Contrast for Unsupervised Visual Representation Learning (MoCo)
 
+![image](https://github.com/user-attachments/assets/02a425f4-2d55-49d5-a337-b7cfc0957e6d)
+
+MoCo is also a SSL framework, compared with SimCLR there are two major differences:
+- The parameter update mode of the target encoder (encoder $$k$$) is different.
+- The methods for storing negative samples are different.
 
 ## III. Methodology of this paper
 
