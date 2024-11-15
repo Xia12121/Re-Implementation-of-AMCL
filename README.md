@@ -29,7 +29,7 @@ The pipline chart is following:
 
 
 ## II. Baseline Models and their principles
-Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), [MoCo](#2.2-Momentum-Contrast-for-Unsupervised-Visual-Representation-Learning (MoCo)), [SimSiam](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), and [B.Twins[(#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)). This section will illustrate them all respectively.
+Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), [MoCo](#2.2-Momentum-Contrast-for-Unsupervised-Visual-Representation-Learning (MoCo)), [SimSiam](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), and [B.Twins[(#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)). This section will illustrate them all respectively.  
 
 ### 2.1 A Simple Framework for Contrastive Learning of Visual Representations (SimCLR) 
 
@@ -78,6 +78,18 @@ Loss=-cosine(x^q,x^{k+})
 $$
 
 Moreover, SimSiam proposed a novel mechanism named "gradient stop", which prevent gradient from flowing through the encoder.
+
+### 2.4 Barlow Twins: Self-Supervised Learning via Redundancy Reduction (Twins) 
+
+![image](https://github.com/user-attachments/assets/26a8f3b7-c9ee-4173-8539-08ec74e048da)
+
+Similar to prior works, two encoders embed query view and target view respectively. However, the fusing approach is various. B.Twins leverage dot product to fuse features of query and target (In this method, only the values on the diagonal of the fusion matrix are the product of the query and its corresponding correct target, and subsequent optimization is based on this feature).
+
+The loss function is following:
+
+$$
+Loss=\sum_i{(1-C_{ii})}^2+\lamda
+$$
 
 ## III. Methodology of this paper
 
