@@ -37,7 +37,7 @@ Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR
 
 ![image](https://github.com/user-attachments/assets/3b58d5f5-922a-463d-bf0e-efb093bf8fcd)
 
-
+To extract features from two views, two independent encoders ($$encoder q$$) are utilized.
 ## III. Methodology of this paper
 
 ## IV. Re-Implementation of Experiments
