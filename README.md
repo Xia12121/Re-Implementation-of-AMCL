@@ -58,6 +58,13 @@ MoCo is also a SSL framework, compared with SimCLR there are two major differenc
 - The parameter update mode of the target encoder (encoder $$k$$) is different.
 - The methods for storing negative samples are different.
 
+As for the first difference, compared with SimCRL loss won't affect the target encoder directly. The parameter updated through Momentum-based parameter updating:
+
+$$
+\sigma_k^{new}=m\cdot \sigma_k+(1-m)\cdot \sigma_q
+$$
+
+
 ## III. Methodology of this paper
 
 ## IV. Re-Implementation of Experiments
