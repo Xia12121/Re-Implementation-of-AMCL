@@ -112,5 +112,5 @@ Due to the version conflict, I didn't follow author's set up (especially version
 If you want to run my code, please fullfill the version requirement and enter the following instruction in terminal:
 
 ```python
-python
+python train_eval.py --model=${model} --AMCL=${Y or N} --epochs=${epochs} --augs=${augs} --num_runs=${num_runs} | tee ./results/"${timestamp}_${model}_epochs_${epochs}_augs_${augs}".txt
 
