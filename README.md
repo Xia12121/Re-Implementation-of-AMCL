@@ -30,6 +30,9 @@ The pipline chart is following:
 ## II. Baseline Models and their principles
 Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations-(SimCLR)), MoCo, SimSiam, and B.Twins. This section will illustrate them all respectively.
 
+![image](https://github.com/user-attachments/assets/3b58d5f5-922a-463d-bf0e-efb093bf8fcd)
+
+
 ### 2.1 A Simple Framework for Contrastive Learning of Visual Representations (SimCLR) 
 
 
