@@ -71,6 +71,13 @@ Beside this, MoCo dynamically updated negative samples dictionary (When a new ne
 
 ![image](https://github.com/user-attachments/assets/886903ef-3e4d-41bf-ab4b-57eecd3acaea)
 
+SimCLR and MoCo employ consine to calculate similarity, based on the similarity loss function is constructed. However, SimSiam employs cosine to calculate loss value directly:
+
+$$
+Loss=-cosine(x^q,x^{k+})
+$$
+
+Moreover, SimSiam proposed a novel mechanism named "gradient stop", which prevent gradient from flowing through the projection head.
 
 ## III. Methodology of this paper
 
