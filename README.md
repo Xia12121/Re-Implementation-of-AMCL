@@ -111,6 +111,6 @@ Due to the version conflict, I didn't follow author's set up (especially version
 
 If you want to run my code, please fullfill the version requirement and enter the following instruction:
 
-'''python
-python train_eval.py
+```python
+python
 
