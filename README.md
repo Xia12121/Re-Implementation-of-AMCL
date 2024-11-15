@@ -46,7 +46,7 @@ $$
 The model is optimized through the following equation:
 
 $$
-Loss = -\log \frac{exp(similarity(q,k^+))}{\sum_i=0^K{exp(similarity(q,k_i^-))}}
+Loss = -\log \frac{exp(similarity(q,k^+))}{\sum_{i=0}^K{exp(similarity(q,k_i^-))}}
 $$
 
 ## III. Methodology of this paper
