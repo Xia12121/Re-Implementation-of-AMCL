@@ -29,7 +29,7 @@ The pipline chart is following:
 
 
 ## II. Baseline Models and their principles
-Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), [MoCo](#2.2-Momentum-Contrast-for-Unsupervised-Visual-Representation-Learning (MoCo)), SimSiam, and B.Twins. This section will illustrate them all respectively.
+Author declaim AMCL method can be applied to four mainstream SSL method: [SimCLR](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), [MoCo](#2.2-Momentum-Contrast-for-Unsupervised-Visual-Representation-Learning (MoCo)), [SimSiam](#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)), and [B.Twins[(#2.1-A-Simple-Framework-for-Contrastive-Learning-of-Visual-Representations (SimCLR)). This section will illustrate them all respectively.
 
 ### 2.1 A Simple Framework for Contrastive Learning of Visual Representations (SimCLR) 
 
@@ -64,6 +64,12 @@ As for the first difference, compared with SimCRL loss won't affect the target e
 $$
 𝜃_k^{new}=m\cdot 𝜃_k+(1-m)\cdot 𝜃_q
 $$
+
+Beside this, MoCo dynamically updated negative samples dictionary (When a new negative sample is added, one is removed in front, and the workflow is similar to a queue). 
+
+### 2.3 Exploring Simple Siamese Representation Learning (SimSiam) 
+
+![image](https://github.com/user-attachments/assets/886903ef-3e4d-41bf-ab4b-57eecd3acaea)
 
 
 ## III. Methodology of this paper
